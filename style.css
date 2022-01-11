@@ -9,6 +9,11 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .header {
   background-color: #000000;
 }
@@ -663,7 +668,6 @@
 @media screen and (max-width: 992px) {
   .nav-bar {
     padding-block: 0.65rem;
-    padding-right: 2rem;
   }
   .nav-bar, .st-premium .flex-container, .footer .flex-container {
     max-width: 758px;
@@ -759,6 +763,7 @@
 @media screen and (max-width: 768px) {
   .nav-bar {
     width: auto;
+    padding-right: 2rem;
   }
   .nav-bar .nav-bar-tools {
     width: 80%;
